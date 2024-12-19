@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg-[#272b30] text-slate-100 ">
+
+    <div class="loading w-full h-full bg-[#272b30] absolute top-0 left-0 z-[100] content-center hidden">
+        <img class="m-auto" src="./assets/img/loading.gif" alt="">
+    </div>
+
+    <!-- Posts -->
+    <div class="main">
+        <header>
+            <img src="./assets/img/wraper.png" alt="header-img" class="w-full object-cover h-[30vh]" />
+        </header>
+        <!-- NaBar -->
+        <nav
+            class="flex sticky top-0 z-40 justify-between mt-[-15px] px-12 py-4 shadow-black drop-shadow-2xl container m-auto bg-[#3a497b] rounded-2xl flex-wrap content-center">
+            <div class="logo mr-auto flex justify-around content-center">
+                <div class="flex mr-2 flex-wrap items-center">
+                    <img class="h-8 w-auto" src="./assets/img/logo-sm.png" alt="Your Company Logo">
+                </div>
+                <h1 class="text-lg uppercase flex flex-wrap content-center ">Game reveiws</h1>
+            </div>
+            <div class="absolute inset-y-0 right-4 flex items-center md:hidden">
+                <button type="button"
+                    class="relative inline-flex items-center justify-center rounded-md p-2 text-slate-100 hover:bg-blue-950 hover:text-white focus:outline-none transition-all focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+
+                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                    <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="menu ml-auto">
+                <div class="hidden md:ml-6 md:block">
+                    <div class="flex space-x-4 ">
+                        <a role="button" class="rounded-md bg-gray-900 text-white px-3 py-2 text-sm font-medium "
+                            aria-current="page" data-category="mmorpg">mmorpg</a>
+                        <a role="button"
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                            data-category="shooter">shooter</a>
+                        <a role="button"
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                            data-category="sailing">sailing</a>
+                        <a role="button"
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                            data-category="permadeath">permadeath</a>
+
+                        <a role="button"
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                            data-category="superhero">superhero</a>
+
+                        <a role="button"
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                            data-category="pixel">pixel</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container m-auto p-10">
+            <div class="flex flex-wrap game-wraper">
+
+                <!-- <div class="p-4 basis-full  sm:basis-3/6 md:basis-1/3 lg:basis-1/4">
+                    <div
+                        class="border-2 border-gray-900  scale-100 hover:scale-105 border-opacity-40 grayscale-[60%] hover:grayscale-[0%] duration-500 transition-all rounded-lg overflow-hidden">
+                        <div class="h-full p-4 ">
+                            <img class="lg:h-48 md:h-36 w-full rounded-t-lg object-content object-center "
+                                src="./assets/img/thumbnail.jpg" alt="blog">
+                            <div class="py-6">
+                                <div class="info flex flex-wrap justify-between content-center items-center">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-slate-50 mb-1">Game
+                                        Name
+                                    </h2>
+                                    <span class="rounded-md bg-gray-900 px-2 py-1 text-sm font-medium text-white">
+                                        free</span>
+                                </div>
+                                <p class="leading-relaxed mb-3 text-center text-gray-500">Photo booth fam kinfolk
+                                    cold-pressed sriracha leggings.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center flex-wrap border-t border-gray-900 border-opacity-40 py-2 px-3">
+                            <a class="rounded-md bg-[#32383e] px-2 py-1 text-sm font-medium text-white">MMORPG </a>
+                            <span class="rounded-md bg-[#32383e] px-2 py-1 text-sm font-medium text-white ml-auto">
+                                PC
+                            </span>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    <div class="details w-full h-full bg-[#272b30] absolute top-0 left-0 z-50 hidden">
+        <div class="icon absolute right-4 top-5 cursor-pointer">
+            <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+            </svg>
+        </div>
+        <div class="detailsbox"></div>
+
+    </div>
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>

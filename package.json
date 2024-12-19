@@ -1,0 +1,13 @@
+{
+  "name": "game-oop",
+  "version": "1.0.0",
+  "description": "A simple game using object-oriented programming",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "wallaby": {
+    "slowTestThreshold": 200,
+    "reportConsoleErrorAsError": true
+  }
+}
